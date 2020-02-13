@@ -1,0 +1,96 @@
+[
+  {
+    "title": "TEST NAME OF THIS INTERACTION",
+    "target": "TARGET OF TEST - OPTIONAL",
+    "ambient": {
+      "parameterOfAmbient" : ""
+      "anotherParam" : ""
+      ...
+    },
+    "user": {
+      "name": "nameOfUser",
+      "pass": "pass",
+      "device": {
+        "id": "111",
+        "unique-id": "666",
+        "deviceBrand": "BrandOfPh0ne",
+        "deviceSerialNumber": "88iii888",
+        "deviceScreenWpixels": "1080",
+        "deviceScreenHpixels": "1812",
+        "imei": "IMEIOFPHONE",
+        "deviceName": "DEVICE",
+        "os": {
+          "deviceFamily": "Android",
+          "locale": "IT",
+          "deviceOsVersion": "version of os"
+        }
+      }
+    },
+    "flow": {
+      "setUp": "1stCall",
+      "1stCall": {
+        "test": {
+          "setUp": {
+            "header": [ {"valueName":"valueForHeader"},
+                        {"valueName2":"valueForHeader2"}
+                      ],
+            "body": [ { "valueName": "valueForBody" },
+                      { "valueName2": "valueForBody2" }
+                    ],
+            "queryParams": [  { "valueNameQP": "valueForQP" },
+                              { "valueNameQP2": "valueForQP2" }
+                          ]
+          },
+          "acceptableValues": [
+            { "valueToTest": "expectedValue" },
+            { ".value[0].To.Test": "ExpectedValue" }
+          ],
+          "scopeOfTest": "/folderWhereIsSchemaOfJSON",
+          "statusToTest": 200,
+          "toTest": true
+        },
+        "status": {
+          "a200": "requestWhereYouGoInStatus200",
+          "a401": "requestWhereYouGoInStatus401",
+          "a404": "requestWhereYouGoInStatus404",
+          "a409": "requestWhereYouGoInStatus409",
+          "a500": "requestWhereYouGoInStatus500"
+        }
+
+      },
+      "requestWhereYouGoInStatus200": {
+        "test": {
+          "setUp": {
+            "header": [ {"valueName":"valueForHeader"},
+                        {"valueName2":"valueForHeader2"}
+                      ],
+            "body": [ { "valueName": "valueForBody" },
+                      { "valueName2": "valueForBody2" }
+                    ],
+            "queryParams": [  { "valueNameQP": "valueForQP" },
+                              { "valueNameQP2": "valueForQP2" }
+                          ]
+          },
+          "acceptableValues": [
+            { "valueToTest": "expectedValue" },
+            { ".value[0].To.Test": "ExpectedValue" }
+          ],
+          "scopeOfTest": "/folderWhereIsSchemaOfJSON",
+          "statusToTest": 200,
+          "toTest": true
+        },
+        "status": {
+          "a200": "requestWhereYouGoInStatus200InThisSpecificCase",
+          "a401": "requestWhereYouGoInStatus401InThisSpecificCase",
+          "a404": "requestWhereYouGoInStatus404InThisSpecificCase",
+          "a409": "requestWhereYouGoInStatus409InThisSpecificCase",
+          "a500": "requestWhereYouGoInStatus500InThisSpecificCase"
+        }
+
+      }
+    }
+  },
+  {another Object like Object before},
+  ...,
+  ...,
+]
