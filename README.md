@@ -1,2 +1,2 @@
 # PostmanSetUpCollectionWorkFlow
-A boilerplate for manage workflow in a collection of Postman
+A boilerplate for manage workflow in a Postman collection.
