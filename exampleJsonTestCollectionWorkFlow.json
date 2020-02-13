@@ -3,7 +3,7 @@
     "title": "TEST NAME OF THIS INTERACTION",
     "target": "TARGET OF TEST - OPTIONAL",
     "ambient": {
-      "parameterOfAmbient" : ""
+      "parameterOfAmbient" : "",
       "anotherParam" : ""
       ...
     },
@@ -90,7 +90,7 @@
       }
     }
   },
-  {another Object like Object before},
-  ...,
-  ...,
+  {"another Object like Object before"},
+  {"..."},
+  {"..."}
 ]
