@@ -4,8 +4,8 @@
     "target": "TARGET OF TEST - OPTIONAL",
     "ambient": {
       "parameterOfAmbient" : "",
-      "anotherParam" : ""
-      ...
+      "anotherParam" : "",
+      "..."
     },
     "user": {
       "name": "nameOfUser",
